@@ -1,7 +1,4 @@
--- tgGuard v5
--- Created On Apr 2017
--- Developer @sajjad_021
--- tgChannel @tgMember
+-- Developer HosseinNET
 serpent=require("serpent")
 https=require"ssl.https"
 JSON = require("dkjson")
@@ -17,8 +14,8 @@ notify.init ("Telegram updates")
 chats = {}
 day = 86400
 bot_id = 180191663 -- [[محل قرار گیری آیدی اکانت ربات]]
-sudo_users = {158955285,180191663,279700027} -- [[محل قرار گیری آیدی سودو ها]]
-bot_owner = {158955285,180191663,279700027} -- [[ محل قرار گیری آیدی مدیر اصلی ربات ]]
+sudo_users = {330097534} -- [[محل قرار گیری آیدی سودو ها]]
+bot_owner = {104684115,301393805} -- [[ محل قرار گیری آیدی مدیر اصلی ربات ]]
   -----------------------------------------------------------------------------------------------                  
      ---------------
   -- Start Functions --
@@ -964,7 +961,9 @@ elseif msg_type == 'MSG:Sticker' then
    end
    end
 elseif msg_type == 'MSG:NewUserLink' then
-  if database:get('bot:tgservice:mute'..msg.chat_id_) then
+  if database:get('bot:
+					
+			service:mute'..msg.chat_id_) then
     local id = msg.id_
     local msgs = {[0] = id}
     local chat = msg.chat_id_
@@ -3395,7 +3394,7 @@ Site: http://tgMember.cf *]]
    if text:match("^[Hh]elp$") and is_mod(msg.sender_user_id_, msg.chat_id_) then
    
    local text = [[*
-📖 tgGuard راهنمای فعال سازی و غیرفعال سازی قفل های ربات :
+📖 راهنمای فعال سازی و غیرفعال سازی قفل های ربات :
 
 > حالت سختگیرانه :
 فعال سازی :
@@ -3581,8 +3580,8 @@ Setlink
 
 Expire
 					
-Developer @sajjad_021
-tgChannel @tgMember *]]
+Developer HosseinNET
+
            send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
    end
    -----------------------------------------------------------------------------------------------
@@ -3592,7 +3591,7 @@ tgChannel @tgMember *]]
    end
    -----------------------------------------------------------------------------------------------
       if text:match("^[Pp]ayping$") and is_sudo(msg) then
-        send(msg.chat_id_, msg.id_, 1, 'https://zarinp.al/tgMember', 1, 'html')
+        send(msg.chat_id_, msg.id_, 1, '', 1, 'html')
    end
   end
   -----------------------------------------------------------------------------------------------
