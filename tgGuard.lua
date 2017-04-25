@@ -1,7 +1,7 @@
 -- tgGuard v5
 -- Created On Apr 2017
 -- Developer @sajjad_021
--- tgChannel @tgMember
+-- tgChannel @
 serpent=require("serpent")
 https=require"ssl.https"
 JSON = require("dkjson")
